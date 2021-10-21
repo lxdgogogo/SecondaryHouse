@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.196.102.135:3306/secondaryHouse?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: secondaryHouse
+    password: rSxP4WEH6cMCGdKF
+    type: com.alibaba.druid.pool.DruidDataSource
+server:
+  port: 8181
+mybatis:
+  mapper-locations: classpath*:resources/mapper/*.xml
+  type-aliases-package: com.springboot.secondaryHouse.dao

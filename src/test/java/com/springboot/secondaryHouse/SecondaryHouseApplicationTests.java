@@ -1,4 +1,4 @@
-package com.example.secondaryhouse;
+package com.springboot.secondaryHouse;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
