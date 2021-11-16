@@ -63,4 +63,6 @@ public interface UserDao {
      */
     int deleteById(String username);
 
+    List<User> test();
+
 }
