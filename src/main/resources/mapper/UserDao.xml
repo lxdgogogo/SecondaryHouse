@@ -21,7 +21,7 @@
     <select id="queryById" resultMap="BaseResultMap">
         select
           userName, password, name, sex
-        from secondaryHouse.User
+        from secondaryhouse.User
         where userName = #{username}
     </select>
 
@@ -29,7 +29,7 @@
     <select id="queryAllByLimit" resultMap="BaseResultMap">
         select
           userName, password, name, sex
-        from secondaryHouse.User
+        from secondaryhouse.User
         limit #{offset}, #{limit}
     </select>
 
@@ -37,7 +37,7 @@
     <select id="queryAll" resultMap="BaseResultMap">
         select
           userName, password, name, sex
-        from secondaryHouse.User
+        from secondaryhouse.User
         <where>
             <if test="username != null and username != ''">
                 and userName = #{username}
@@ -56,13 +56,13 @@
 
     <!--新增所有列-->
     <insert id="insert">
-        insert into secondaryHouse.User(userName, password, name, sex)
+        insert into secondaryhouse.User(userName, password, name, sex)
         values (#{username}, #{password}, #{name}, #{sex})
     </insert>
 
     <!--通过主键修改数据-->
     <update id="update">
-        update secondaryHouse.User
+        update secondaryhouse.User
         <set>
             <if test="password != null and password != ''">
                 password = #{password},
@@ -79,7 +79,7 @@
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from secondaryHouse.User where userName = #{username}
+        delete from secondaryhouse.User where userName = #{username}
     </delete>
 
 

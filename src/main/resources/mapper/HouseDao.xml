@@ -14,7 +14,7 @@
     <select id="queryById" resultMap="BaseResultMap">
         select
             evaluate, price, area, location
-        from secondaryHouse.house
+        from secondaryhouse.house
         where location = #{location}
     </select>
 
@@ -22,14 +22,14 @@
     <select id="query" resultMap="BaseResultMap">
         select
             evaluate, price, area, location
-        from secondaryHouse.house
+        from secondaryhouse.house
     </select>
 
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="BaseResultMap">
         select
         evaluate, price, area, location
-        from secondaryHouse.house
+        from secondaryhouse.house
         <where>
             <if test="evaluate != null">
                 and evaluate = #{evaluate}
@@ -48,13 +48,13 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="location" useGeneratedKeys="true">
-        insert into secondaryHouse.house(evaluate, price, area, location)
+        insert into secondaryhouse.house(evaluate, price, area, location)
         values (#{evaluate}, #{price}, #{area}, #{location})
     </insert>
 
     <!--通过主键修改数据-->
     <update id="update">
-        update secondaryHouse.house
+        update secondaryhouse.house
         <set>
             <if test="evaluate != null">
                 evaluate = #{evaluate},
@@ -71,7 +71,7 @@
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete from secondaryHouse.house where location = #{location}
+        delete from secondaryhouse.house where location = #{location}
     </delete>
 
 </mapper>

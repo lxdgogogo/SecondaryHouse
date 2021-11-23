@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://121.196.102.135:3306/secondaryHouse?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://49.232.197.191:3306/secondaryhouse?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
     username: secondaryHouse
-    password: rSxP4WEH6cMCGdKF
+    password: 2JxWMnNFX4sbPXih
     type: com.alibaba.druid.pool.DruidDataSource
 server:
   port: 8181
